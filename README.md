@@ -1,88 +1,86 @@
-# Comparing Multimodal Machine Learning to Lung Cancer Classification
 
-This repository contains a project that compares the performance of different machine learning models in classifying lung cancer. The models included in this comparison are:
+# Multimodal Machine Learning for Lung Cancer Classification
 
-- Convolutional Neural Network (CNN)
-- Transfer Learning using VGG16
-- Transfer Learning using ResNet50
-- Random Forest
+A comprehensive machine learning project comparing Convolutional Neural Networks, Transfer Learning (VGG16, ResNet50), and Random Forest for lung cancer image classification. Achieves up to 98% accuracy, with reproducible experiments and detailed model evaluation in a single Jupyter notebook.
 
-The entire project is implemented in a single Jupyter notebook for ease of use and reproducibility.
+---
+
+## Overview
+
+This repository presents a comparative study of multiple machine learning models for the classification of lung cancer from medical images. The project evaluates:
+
+* **Convolutional Neural Network (CNN)**
+* **Transfer Learning with VGG16**
+* **Transfer Learning with ResNet50**
+* **Random Forest**
+
+All implementations, experiments, and results are contained within a single, well-documented Jupyter notebook.
+
+---
 
 ## Repository Structure
 
-The repository is structured as follows:
+* `multimodal-machine-learning-model-to-lung-cancer-classification.ipynb`: Main notebook with complete workflow.
+* `Dataset/`: Contains categorized lung cancer images for model training and evaluation.
+* `Models/`: Stores trained model files for reuse or further analysis.
 
-- `multimodal-machine-learning-model-to-lung-cancer-classification.ipynb`: The main Jupyter notebook file containing the implementation of the models.
-- `Dataset/`: A folder containing images of multiple categories used for training and testing the models.
-- `Models/`: A folder for saving the trained models.
+---
 
 ## Getting Started
 
-To get started with this project, follow the steps below.
+**Prerequisites:**
 
-### Prerequisites
+* Python 3.7+
+* Jupyter Notebook
 
-Ensure you have the following installed:
-
-- Python 3.7 or higher
-- Jupyter Notebook
-- Git
-
-You will also need the following Python packages, which can be installed using `pip`:
+**Required Packages:**
 
 ```sh
 pip install numpy pandas matplotlib scikit-learn tensorflow keras
 ```
 
-### Cloning the Repository
-
-Clone this repository to your local machine using the following command:
+**Clone the Repository:**
 
 ```sh
 git clone https://github.com/algo-tushar/comparing-multimodal-machine-learning-to-lung-cancer-classification.git
 cd comparing-multimodal-machine-learning-to-lung-cancer-classification
 ```
 
-### Dataset
+---
 
-The `Dataset` folder should contain images categorized into appropriate subfolders. Ensure that your dataset is organized correctly for the models to be trained effectively.
+## Usage
 
-### Running the Notebook
+1. Organize your dataset in the `Dataset/` folder, with appropriate subfolders for each class.
+2. Launch Jupyter Notebook and open the main notebook:
 
-Launch Jupyter Notebook and open the main notebook file:
+   ```sh
+   jupyter notebook multimodal-machine-learning-model-to-lung-cancer-classification.ipynb
+   ```
+3. Execute all cells sequentially. The notebook covers:
 
-```sh
-jupyter notebook multimodal-machine-learning-model-to-lung-cancer-classification.ipynb
-```
+   * Data loading and preprocessing
+   * Model building and configuration
+   * Training and evaluation
+   * Performance visualization and comparison
 
-Follow the instructions in the notebook to run the cells sequentially. The notebook includes:
-
-1. **Data Loading and Preprocessing**: Code to load and preprocess the dataset.
-2. **Model Definitions**: Definitions and configurations for the CNN, VGG16, ResNet50, and Random Forest models.
-3. **Training and Evaluation**: Code to train and evaluate each model.
-4. **Results and Comparisons**: Visualizations and comparisons of the performance metrics for each model.
-
-### Saving Models
-
-Trained models will be saved in the `Models` folder. Ensure this folder exists in the root directory of the project before running the notebook.
-
-## Results
-
-The performance of each model is evaluated based on accuracy, precision, recall, and F1-score. Detailed results and comparisons can be found in the final sections of the notebook.
-
-## Contributing
-
-Contributions are welcome! Please fork this repository and submit pull requests with any enhancements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or inquiries, please contact [abubakar.tushar@gmail.com].
+**Note:** Trained models are saved automatically in the `Models/` directory.
 
 ---
 
-**Disclaimer**: This project is for educational and research purposes only. The models and results should not be used for clinical decision-making without further validation.
+## Results
+
+Models are evaluated using **accuracy, precision, recall, and F1-score**. Comprehensive performance comparisons are included in the notebook, with the best models achieving up to **98% accuracy**.
+
+---
+
+## Contributing
+
+Contributions and suggestions are welcome. Please open issues or submit pull requests to help improve this project.
+
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
